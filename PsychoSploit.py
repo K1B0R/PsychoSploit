@@ -337,10 +337,11 @@ elif listen == '2':
     os.system('python3 PsychoSploit.py')
 elif listen == '4':
     print(Style.BRIGHT + Fore.MAGENTA + 'A Listener is a tool which is used in pentests. NC or Netcat is know as the pentesters swissarmy knife due to the fact that \n it does not just serve as a listener but you can also use it to check if certian ports open ports are open or operational in a network or client! \n A listener is used to catch a open connection that is made via a reverse shell or backdoor. You can read more about Listeners with the following link ------> https://www.hackers-arise.com/hacking-fundamentals')
+     time.sleep(6)
     os.system('python3 PsychoSploit.py')
 elif listen == '5':
     print('So you have gotten a shell that may look like this "$" or just looks like a blank terminal command line that is what you call A unstable Shell! There are many ways to stabalize your reverse shell! \n one of the basic ways to stabilize your reverse shell is stabilizing it with python! TO get the python command inorder to stabalize your shell re-launch the script and choose option 6 which will make A .txt document with instructions to stabalize your shell!!!')
-    time.sleep(3)
+    time.sleep(6)
     os.system('python3 PsychoSploit.py')
 elif listen == '6':
     time.sleep(3)
