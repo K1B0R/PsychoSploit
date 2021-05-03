@@ -1,0 +1,36 @@
+===============================================HOW MAKE YOUR SHELL STABLE WITH PYTHON=========================================
+
+
+first we need to check if your pwned machine has python installed! we can easily do this via the command "which python"
+
+if it comes up with a result that usally looke like "/usr/bin/python"!
+
+now in your terminal type "python -c 'import pty;pty.spawn("/bin/bash")'" and then your shell should look something like this
+
+user@machine~$
+
+but if you do the commands "clear" or use and of the arrow keys on then keyboard it wont work so now for the last and final parts
+
+down below i will have versions of the commands which are for "kali Linux" and "Ubuntu"
+
+
+
+
+
+
+Kali Linux: when you are in the shell press the keyboard buttons "CTRL + Z" and then type "stty raw -echo;fg"
+
+then after that make sure NOT TO TYPE ANYTHING what ever you type next you will not be able to see to make sure your careful!
+
+after that step type the following remember THIS WILL NOW SHOW UP BUT YOU ARE TYPING IT! type "export TERM=xterm" then press ENTER 3 - 4 times.
+
+after that you should now be able to use the arrow keys and use commands like "clear"!
+
+
+
+
+Ubuntu: when you are in the shell press the keyboard buttons "CTRL + Z" and then type "stty raw -echo"
+
+then after that make sure NOT TO TYPE ANYTHING what ever you type next you will not be able to see to make sure your careful!
+
+after that step type the following remember THIS WILL NOW SHOW UP BUT YOU ARE TYPING IT! type "export TERM=xterm" then press ENTER 3 - 4 times.
