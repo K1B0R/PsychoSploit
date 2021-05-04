@@ -33,7 +33,7 @@ t = threading.Thread(target=animate)
 t.start()
 
 #long process here or Time Process to extend the wairt just edit the time.sleep(10) variable to what ever number that you want
-time.sleep(5)
+time.sleep(3)
 done = True
 print('\n')
 print(Style.BRIGHT + Fore.RED +' __________             ___________.__           __      __            .__       .___')
@@ -395,7 +395,7 @@ t = threading.Thread(target=animate)
 t.start()
 
 #long process here or Time Process to extend the wairt just edit the time.sleep(10) variable to what ever number that you want
-time.sleep(5)
+time.sleep(3)
 done = True
 print('\n')
 time.sleep(2)
@@ -415,6 +415,7 @@ print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[3] How To PrivEsc (Crontab)')
 print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[4] How To PrivEsc (Kernal Exploits)')
 print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[5] How To Look For Special Files Or Ways To PrivEsc (Linpeas)')
 print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[6] Download PrivEsc Tools (Will Install Linpeas and LinEnum)')
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + '[7] AutoMation')
 
 time.sleep(1)
 print('\n')
@@ -457,3 +458,149 @@ elif privesc == '5':
     os.system('cp ~/PsychoSploit/src/How_to_use_linpeas.txt ~/Desktop/temp/')
     time.sleep(2)
     print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'Done! Check your /Desktop/temp/ !!')
+elif privesc == '7':
+    time.sleep(3)
+    os.system('mkdir ~/PsychoSploit/Nmap')
+    time.sleep(2)
+    print("\n")
+print('[*] Getting The Automated Robots Warmed Up...')
+done = False
+#here is the animation
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rLOADING... ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\r[+]PW3N TH03S SYST3MS!     ')
+
+t = threading.Thread(target=animate)
+t.start()
+
+#long process here or Time Process to extend the wairt just edit the time.sleep(10) variable to what ever number that you want
+time.sleep(5)
+done = True
+print('\n')
+time.sleep(2)
+os.system('clear')
+
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + '                                                                           .         .                                                                                          ')
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + '         .8.       8 8888      88 8888888 8888888888 ,o888888o.           ,8.       ,8.                   .8.    8888888 8888888888  8 8888     ,o888888o.     b.             8 ')
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + '        .888.      8 8888      88       8 8888    . 8888     `88.        ,888.     ,888.                 .888.         8 8888        8 8888  . 8888     `88.   888o.          8 ')
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + '       :88888.     8 8888      88       8 8888   ,8 8888       `8b      .`8888.   .`8888.               :88888.        8 8888        8 8888 ,8 8888       `8b  Y88888o.       8 ')
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + '      . `88888.    8 8888      88       8 8888   88 8888        `8b    ,8.`8888. ,8.`8888.             . `88888.       8 8888        8 8888 88 8888        `8b .`Y888888o.    8 ')
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + "     .8. `88888.   8 8888      88       8 8888   88 8888         88   ,8'8.`8888,8^8.`8888.           .8. `88888.      8 8888        8 8888 88 8888         88 8o. `Y888888o. 8 ")
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + "    .8`8. `88888.  8 8888      88       8 8888   88 8888         88  ,8' `8.`8888' `8.`8888.         .8`8. `88888.     8 8888        8 8888 88 8888         88 8`Y8o. `Y88888o8 ")
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + "   .8' `8. `88888. 8 8888      88       8 8888   88 8888        ,8P ,8'   `8.`88'   `8.`8888.       .8' `8. `88888.    8 8888        8 8888 88 8888        ,8P 8   `Y8o. `Y8888 ")
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + "  .8'   `8. `88888.` 8888     ,8P       8 8888   `8 8888       ,8P ,8'     `8.`'     `8.`8888.     .8'   `8. `88888.   8 8888        8 8888 `8 8888       ,8P  8      `Y8o. `Y8 ")
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + " .888888888. `88888. 8888   ,d8P        8 8888    ` 8888     ,88' ,8'       `8        `8.`8888.   .888888888. `88888.  8 8888        8 8888  ` 8888     ,88'   8         `Y8o.` ")
+print(Style.BRIGHT + Back.RED +Fore.LIGHTGREEN_EX + ".8'       `8. `88888. `Y88888P'         8 8888       `8888888P'  ,8'         `         `8.`8888. .8'       `8. `88888. 8 8888        8 8888     `8888888P'     8            `Yo ")
+print('\n')
+print('\n')
+
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[1] Nmap Agressive Scan (Automated)')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[2] Hydra FTP BruteForce')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[3] Hydra FTP BruteForce')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[4] Gobuster Dir BruteForce')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[5] Hydra HTTP BruteForce')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[6] Nmap Vulnurability Scan (Verbose and Extra)')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[7] Check Your VPN Adress (For TryHackMe or HackTheBox)')
+
+time.sleep(1)
+print('\n')
+automate = input(Style.BRIGHT + Fore.YELLOW + 'PWNED: ')
+
+if automate == '1':
+    time.sleep(3)
+    print('Getting Nmap Ready...')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter IP')
+    IP = input(Style.BRIGHT + Fore.RED + 'IP: ')
+    time.sleep(2)
+    print('Starting The Scan Once Done All Of The Information Will Be OutPuted Into A .txt File Called nmap.log Located In Your ~/PsychoSploit/Nmap/ Directory!')
+    time.sleep(2)
+    os.system('nmap -A ' + IP + ' | tee nmap.log > ~/PsychoSploit/Nmap/')
+    time.sleep(3)
+    os.system('python3 PsychoSploit.py')
+
+elif automate == '2':
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Getting Hydra Ready...')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter The Path To Your Wordlst (rockyou.txt)')
+    WORDLIST = input(Style.BRIGHT + Fore.YELLOW + 'Wordlist: ')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter IP')
+    IP = input(Style.BRIGHT + Fore.YELLOW + 'IP: ')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.RED + 'Starting The BruteForce...')
+    time.sleep(2)
+    os.system('hydra -L ' + WORDLIST + ' -P ' + WORDLIST + ' ftp://' + IP + ' -t 64')
+
+elif automate == '3':
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Getting Hydra Ready...')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter The Path To Your Wordlst (rockyou.txt)')
+    WORDLIST = input(Style.BRIGHT + Fore.YELLOW + 'Wordlist: ')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter IP')
+    IP = input(Style.BRIGHT + Fore.YELLOW + 'IP: ')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.RED + 'Starting The BruteForce...')
+    time.sleep(2)
+    os.system('hydra -L ' + WORDLIST + ' -P ' + WORDLIST + ' ssh://' + IP + ' -t 64')
+
+elif automate == '4':
+    time.sleep(3)
+    print('Getting Gobuster Ready...')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter The Path To Your Directory Wordlst (medium.txt)')
+    WORDLIST = input(Style.BRIGHT + Fore.YELLOW + 'Wordlist: ')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter The Link Of The Website You Want To Use Gobuster On!')
+    LINK = input(Style.BRIGHT + Fore.YELLOW + 'LINK: ')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.RED + 'Starting The BruteForce...')
+    time.sleep(2)
+    os.system('gobuster -w ' + WORDLIST + ' -u ' + LINK + ' -x html,php,txt,xml')
+
+elif automate == '5':
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Getting Hydra Ready...')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter The Path To Your Wordlst (rockyou.txt)')
+    WORDLIST = input(Style.BRIGHT + Fore.YELLOW + 'Wordlist: ')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter IP')
+    IP = input(Style.BRIGHT + Fore.YELLOW + 'IP: ')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.RED + 'Enter The Directory You Want To Try TO BruteForce Against For Example http://mysite.com/login.php we would late /login.php and Enter It Below!')
+    DIR = input(Style.BRIGHT + Fore.YELLOW + 'Web Directory: ')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.RED + 'Starting The BruteForce...')
+    time.sleep(2)
+    os.system('hydra -L ' + WORDLIST + ' -P ' + WORDLIST + ' -t 64 ' + ' -f ' + IP + ' http-get ' + DIR)
+    time.sleep(3)
+    os.system('python3 PsychoSploit.py')
+
+elif automate == '6':
+    time.sleep(3)
+    print('Getting Nmap Ready...')
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.RED + 'Enter IP')
+    IP = input(Style.BRIGHT + Fore.YELLOW + 'IP: ')
+    time.sleep(2)
+    print('Starting The Scan Once Done All Of The Information Will Be OutPuted Into A .txt File Called nmap.log Located In Your ~/PsychoSploit/Nmap/ Directory!')
+    time.sleep(2)
+    os.system('nmap -vv -sV --script vuln ' + IP + ' | tee nmap.log > ~/PsychoSploit/Nmap/')
+    time.sleep(3)
+    os.system('python3 PsychoSploit.py')
+
+elif automate == '7':
+    time.sleep(3)
+    print('[+] H3r3 1S Y0uR VPN Adr3Ss B0sS!')
+    os.system('ifconfig tun0')
+    time.sleep(4)
+    os.system('python3 PsychoSploit.py')
