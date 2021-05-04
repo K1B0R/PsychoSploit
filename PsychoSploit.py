@@ -518,9 +518,9 @@ if automate == '1':
     print(Style.BRIGHT + Fore.RED + 'Enter IP')
     IP = input(Style.BRIGHT + Fore.RED + 'IP: ')
     time.sleep(2)
-    print('Starting The Scan Once Done All Of The Information Will Be OutPuted Into A .txt File Called nmap.log Located In Your ~/PsychoSploit/Nmap/ Directory!')
+    print('Starting The Scan...')
     time.sleep(2)
-    os.system('nmap -A ' + IP + ' | tee nmap.log > ~/PsychoSploit/Nmap/')
+    os.system('nmap -A ' + IP)
     time.sleep(3)
     os.system('python3 PsychoSploit.py')
 
@@ -592,9 +592,9 @@ elif automate == '6':
     print(Style.BRIGHT + Fore.RED + 'Enter IP')
     IP = input(Style.BRIGHT + Fore.YELLOW + 'IP: ')
     time.sleep(2)
-    print('Starting The Scan Once Done All Of The Information Will Be OutPuted Into A .txt File Called nmap.log Located In Your ~/PsychoSploit/Nmap/ Directory!')
+    print('Starting The Scan...')
     time.sleep(2)
-    os.system('nmap -vv -sV --script vuln ' + IP + ' | tee nmap.log > ~/PsychoSploit/Nmap/')
+    os.system('nmap -vv -sV --script vuln ' + IP)
     time.sleep(3)
     os.system('python3 PsychoSploit.py')
 
