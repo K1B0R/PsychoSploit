@@ -460,8 +460,6 @@ elif privesc == '5':
     print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'Done! Check your /Desktop/temp/ !!')
 elif privesc == '7':
     time.sleep(3)
-    os.system('mkdir ~/PsychoSploit/Nmap')
-    time.sleep(2)
     print("\n")
 print('[*] Getting The Automated Robots Warmed Up...')
 done = False
