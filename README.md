@@ -35,3 +35,10 @@ python3 -m pip install -r requirements.txt  !!
 NOW HAD A PRIVESC SECTION!
 
 the privesc section talks about what privesc is and how it can be acomplished id different ways!
+
+
+i will leave my Buymeacoffee and my paypal below all of the donations i will recieve will do twords funding my projects to have better equipment to make better programs for you!
+
+https://www.buymeacoffee.com/PsychoCoder
+
+https://paypal.me/thegammerssimulant?locale.x=en_US
