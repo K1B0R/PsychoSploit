@@ -7,9 +7,9 @@ This script is mostly pointed twords people what are getting into penetration te
 There are also ones that show you how to use different tools like hydra, nmap, etc. thoes ones have some of my favorite commands to use durring a pentest!
 
 
-VERSION: 1.3
+VERSION: 1.4
 
-RELEASE DATE: 5/4/2021
+RELEASE DATE: 5/11/2021
 
 I will Keep This Script Updated Weekly Every week i will be changing and updating this script so keep an eye out for new versions!
 
