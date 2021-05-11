@@ -1,6 +1,7 @@
 import os
 import time
 import sys
+import base64
 import threading
 import itertools
 import colorama
@@ -63,7 +64,11 @@ print('\n')
 main = input(Style.BRIGHT + Fore.YELLOW + 'PWNED: ')
 
 if main == '1':
-    print('ping <HOST>')
+    time.sleep(3)
+    print('Enter The IP Adress!')
+    IP = input(Style.BRIGHT + Fore.RED + 'IP: ')
+    time.sleep(2)
+    os.system('ping ' + IP)
     time.sleep(5)
     os.system('python3 PsychoSploit.py')
 elif main == '2':
@@ -85,7 +90,6 @@ elif main == '5':
     os.system('python3 PsychoSploit.py')
 elif main == '9':
     os.system('firefox https://github.com/MalwareMix')
-    os.system('firefox-esr https://github.com/MalwareMix')
     time.sleep(5)
     os.system('python3 PsychoSploit.py')
 elif main == '10':
@@ -460,6 +464,8 @@ elif privesc == '5':
     print(Style.BRIGHT + Fore.LIGHTMAGENTA_EX + 'Done! Check your /Desktop/temp/ !!')
 elif privesc == '7':
     time.sleep(3)
+    os.system('mkdir ~/PsychoSploit/Nmap')
+    time.sleep(2)
     print("\n")
 print('[*] Getting The Automated Robots Warmed Up...')
 done = False
@@ -516,9 +522,9 @@ if automate == '1':
     print(Style.BRIGHT + Fore.RED + 'Enter IP')
     IP = input(Style.BRIGHT + Fore.RED + 'IP: ')
     time.sleep(2)
-    print('Starting The Scan...')
+    print('Starting The Scan Once Done All Of The Information Will Be OutPuted Into A .txt File Called nmap.log Located In Your ~/PsychoSploit/Nmap/ Directory!')
     time.sleep(2)
-    os.system('nmap -A ' + IP)
+    os.system('nmap -A ' + IP + ' | tee nmap.log > ~/PsychoSploit/Nmap/')
     time.sleep(3)
     os.system('python3 PsychoSploit.py')
 
@@ -590,9 +596,9 @@ elif automate == '6':
     print(Style.BRIGHT + Fore.RED + 'Enter IP')
     IP = input(Style.BRIGHT + Fore.YELLOW + 'IP: ')
     time.sleep(2)
-    print('Starting The Scan...')
+    print('Starting The Scan Once Done All Of The Information Will Be OutPuted Into A .txt File Called nmap.log Located In Your ~/PsychoSploit/Nmap/ Directory!')
     time.sleep(2)
-    os.system('nmap -vv -sV --script vuln ' + IP)
+    os.system('nmap -vv -sV --script vuln ' + IP + ' | tee nmap.log > ~/PsychoSploit/Nmap/')
     time.sleep(3)
     os.system('python3 PsychoSploit.py')
 
@@ -601,4 +607,132 @@ elif automate == '7':
     print('[+] H3r3 1S Y0uR VPN Adr3Ss B0sS!')
     os.system('ifconfig tun0')
     time.sleep(4)
+    os.system('python3 PsychoSploit.py')
+
+elif automate == '8':
+    time.sleep(2)
+    print("\n")
+print('[*] Getting The Persistance Modules Warmed Up...')
+done = False
+#here is the animation
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rLOADING... ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\r[+] Keep Your Sessions With Persistance :3     ')
+
+t = threading.Thread(target=animate)
+t.start()
+
+#long process here or Time Process to extend the wairt just edit the time.sleep(10) variable to what ever number that you want
+time.sleep(5)
+done = True
+print('\n')
+time.sleep(2)
+os.system('clear')
+
+print('::::::::::. .,:::::: :::::::..   .::::::. ::: .::::::.:::::::::::::::.   :::.    :::.  .,-::::: .,::::::  ')
+print(" `;;;```.;;;;;;;'''' ;;;;``;;;; ;;;`    ` ;;;;;;`    `;;;;;;;;'''';;`;;  `;;;;,  `;;;,;;;'````' ;;;;''''  ")
+print("  `]]nnn]]'  [[cccc   [[[,/[[[' '[==/[[[[,[[['[==/[[[[,    [[    ,[[ '[[,  [[[[[. '[[[[[         [[cccc   ")
+print("   $$$""     $$""""   $$$$$$c     '''    $$$$  '''    $    $$   c$$$cc$$$c $$$ "Y$c$$$$$         $$""""   ")
+print("   888o      888oo,__ 888b 88bo,88b    dP888 88b    dP    88,   888   888,888    Y88`88bo,__,o, 888oo,__ ")
+print('   YMMMb     """"YUMMMMMMM   "W"  "YMmMY" MMM  "YMmMY"     MMM   YMM   ""` MMM     YM  "YUMMMMMP"""""YUMMM')
+print('\n')
+print('\n')
+
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[1] How To Gain Persistance With Cron (Linux)')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[2] How To Gain Persistance From Users .bashrc (Linux)')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[3] How To Gain Persistance With Metasploit (Windows)')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[4] Payload Encoders')
+
+time.sleep(1)
+print('\n')
+persist = input(Style.BRIGHT + Fore.YELLOW + 'PWNED: ')
+
+if persist == '1':
+    time.sleep(3)
+    f = open("~/PsychoSploit/src/cron.txt", "r")
+    print(f.read())
+    time.sleep(2)
+    os.system('cp ~/PsychoSploit/src/cron.txt ~/Desktop/temp/')
+    time.sleep(6)
+    os.system('python3 PsychoSploit.py')
+
+elif persist == '2':
+    f = open("~/PsychoCoder/src/bashrc.txt ~/Desktop/temp/")
+    print(f.read())
+    time.sleep(2)
+    os.system('cp ~/PsychoSploit/src/Windows.txt ~/Desktop/temp/')
+    time.sleep(6)
+    os.system('python3 PsychoSploit.py')
+
+elif persist == '3':
+    time.sleep(3)
+    print('In Order To Gain Persistance To A Windows Computer Via Metasploit you can do the following command \n in the meterpreter session type "Background" to backgrund your meterpreter session, Now type "use exploit/windows/local/persistence_service" in metasploit then set your session number; if you had only spawned 1 shell then it will be session 1 \n or if it is a different number then you can type "sessions" in metasploit to see all active or backgrounded sessions! Now set your lport and type exploit!')
+    time.sleep(15)
+    os.system('python3 PsychoSploit.py')
+
+elif persist == '4':
+    time.sleep(2)
+    print("\n")
+print('[*] Getting The Persistance Modules Warmed Up...')
+done = False
+#here is the animation
+def animate():
+    for c in itertools.cycle(['|', '/', '-', '\\']):
+        if done:
+            break
+        sys.stdout.write('\rLOADING... ' + c)
+        sys.stdout.flush()
+        time.sleep(0.1)
+    sys.stdout.write('\r[+] Keep Your Sessions With Persistance :3     ')
+
+t = threading.Thread(target=animate)
+t.start()
+
+#long process here or Time Process to extend the wairt just edit the time.sleep(10) variable to what ever number that you want
+time.sleep(5)
+done = True
+print('\n')
+time.sleep(2)
+os.system('clear')
+
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + ' ______               __                 __ _______                               __              ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|   __ \.---.-.--.--.|  |.-----.---.-.--|  |    ___|.-----.----.----.--.--.-----.|  |_.-----.----.')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|    __/|  _  |  |  ||  ||  _  |  _  |  _  |    ___||     |  __|   _|  |  |  _  ||   _|  -__|   _|')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|___|   |___._|___  ||__||_____|___._|_____|_______||__|__|____|__| |___  |   __||____|_____|__|  ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '              |_____|                                               |_____|__|                    ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '====================================================================================================')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|                                    MORE COMING SOON!                                             | ')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|                  IF YOU HAVE ANY QUESTION YOU CAN REACO OUT TO ME VIA DISCORD!                   |')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|            FOR FUTURE UPDATES YOU CAN ALSO CONTACT ME I AM ONLINE DISCORD 24/7 IF                |')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|                 I DONT ANSWER RIGHT AWAY I WILL MAKE SURE TO ANSER LATER!                        |')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '|                                    PWN THE WORLD!                                                |')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '====================================================================================================')
+print('\n')
+print('\n')
+
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + '[1] Base64 Encoder')
+print(Style.BRIGHT + Fore.LIGHTGREEN_EX + 'MORE COMING SOON ;3')
+
+
+time.sleep(1)
+print('\n')
+encode = input(Style.BRIGHT + Fore.YELLOW + 'PWNED: ')
+
+if encode == '1':
+    time.sleep(3)
+    print('Enter The String You Want To Encode Into Bas64!')
+    string = input(Style.BRIGHT + Fore.RED + 'STRING: ')
+    sample_string = string
+    sample_string_bytes = sample_string.encode("ascii")
+  
+    base64_bytes = base64.b64encode(sample_string_bytes)
+    base64_string = base64_bytes.decode("ascii")
+  
+    print(f"H3R3 T4K3 TH1S!: {base64_string}")
+    time.sleep(5)
     os.system('python3 PsychoSploit.py')
