@@ -1,0 +1,26 @@
+                                                                                                                 
+    ,o888888o.    8 888888888o.      ,o888888o.     b.             8 8888888 8888888888   .8.          8 888888888o   
+   8888     `88.  8 8888    `88.  . 8888     `88.   888o.          8       8 8888        .888.         8 8888    `88. 
+,8 8888       `8. 8 8888     `88 ,8 8888       `8b  Y88888o.       8       8 8888       :88888.        8 8888     `88 
+88 8888           8 8888     ,88 88 8888        `8b .`Y888888o.    8       8 8888      . `88888.       8 8888     ,88 
+88 8888           8 8888.   ,88' 88 8888         88 8o. `Y888888o. 8       8 8888     .8. `88888.      8 8888.   ,88' 
+88 8888           8 888888888P'  88 8888         88 8`Y8o. `Y88888o8       8 8888    .8`8. `88888.     8 8888888888   
+88 8888           8 8888`8b      88 8888        ,8P 8   `Y8o. `Y8888       8 8888   .8' `8. `88888.    8 8888    `88. 
+`8 8888       .8' 8 8888 `8b.    `8 8888       ,8P  8      `Y8o. `Y8       8 8888  .8'   `8. `88888.   8 8888      88 
+   8888     ,88'  8 8888   `8b.   ` 8888     ,88'   8         `Y8o.`       8 8888 .888888888. `88888.  8 8888    ,88' 
+    `8888888P'    8 8888     `88.    `8888888P'     8            `Yo       8 8888.8'       `8. `88888. 8 888888888P   
+======================================================================================================================
+							GAIN PERSISTANCE
+
+What Is A Crontab
+
+Deffinition:  The crontab is used to automate all types of tasks on Linux systems. This is an especially important skill for aspiring system administrators to learn. 
+It can be somewhat challenging to get started if you’re a beginner. The syntax is different than most other commands.
+For this reason, this lesson will include a little more background information before I show you some of the uses.
+
+How Can A Attacker Use This To Thier Advantage?
+
+Well if a hacker is able to edit a users crontab then they can put code in it telling the computer to download a file from their runing webserver and run it inorder to gain
+a reverse shell!
+
+Download And Run Backdoor: 
