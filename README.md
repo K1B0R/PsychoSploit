@@ -1,6 +1,6 @@
 
 
-## THIS SCRIPT WAS MADE BY MALWAREMIX!
+## THIS PROGRAM WAS MADE BY MALWAREMIX!
 
 
   This script is mostly pointed twords people what are getting into penetration testing and the world of hacking! This script will include many different reverse   shells from python to perl, zsh, bash, and more!
