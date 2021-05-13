@@ -1,4 +1,4 @@
-time
-threading
-itertools
-colorama
+time>=0.3.0
+threading>=0.2.0
+itertools>=8.7.0
+colorama>=0.4.4
