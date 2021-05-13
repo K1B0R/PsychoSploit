@@ -58,6 +58,7 @@ print(Style.BRIGHT + Fore.CYAN +'[9] My Github :3')
 print(Style.BRIGHT + Fore.CYAN +'[10] Download rockyou.txt (This Will Download To your /Documents/ Directory)')
 print(Style.BRIGHT + Fore.CYAN + '[11] Reverse Shell Cheet Sheet')
 print(Style.BRIGHT + Fore.CYAN + '[12] Buy Me A Coffee')
+print(Style.BRIGHT + Fore.CYAN + '[13] Update PsychoSploit!')
 
 time.sleep(1)
 print('\n')
@@ -104,6 +105,17 @@ elif main == '10':
 elif main == '6':
     print('hydra -L /usr/share/wordlists/rockyou.txt -P /usr/share/wordlists/rockyou.txt ftp://IP')
     time.sleep(5)
+    os.system('python3 PsychoSploit.py')
+elif main == '13':
+    time.sleep(3)
+    print('[+] Prepareing The Download!')
+    time.sleep(3)
+    os.system('rm -rf ~/PsychoSploit/PsychoSploit.py')
+    time.sleep(2)
+    os.system('wget https://raw.githubusercontent.com/MalwareMix/PsychoSploit/main/PsychoSploit.py > ~/PsychoSploit/PsychoSploit.py')
+    time.sleep(2)
+    print('Done!')
+    time.sleep(2)
     os.system('python3 PsychoSploit.py')
 elif main == '12':
     os.system('firefox https://www.buymeacoffee.com/PsychoCoder')
@@ -510,7 +522,6 @@ print(Style.BRIGHT + Fore.LIGHTRED_EX + '[4] Gobuster Dir BruteForce')
 print(Style.BRIGHT + Fore.LIGHTRED_EX + '[5] Hydra HTTP BruteForce')
 print(Style.BRIGHT + Fore.LIGHTRED_EX + '[6] Nmap Vulnurability Scan (Verbose and Extra)')
 print(Style.BRIGHT + Fore.LIGHTRED_EX + '[7] Check Your VPN Adress (For TryHackMe or HackTheBox)')
-print(Style.BRIGHT + Fore.LIGHTRED_EX + '[8] Persistance Modules')
 
 time.sleep(1)
 print('\n')
