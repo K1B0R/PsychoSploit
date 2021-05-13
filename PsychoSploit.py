@@ -510,6 +510,7 @@ print(Style.BRIGHT + Fore.LIGHTRED_EX + '[4] Gobuster Dir BruteForce')
 print(Style.BRIGHT + Fore.LIGHTRED_EX + '[5] Hydra HTTP BruteForce')
 print(Style.BRIGHT + Fore.LIGHTRED_EX + '[6] Nmap Vulnurability Scan (Verbose and Extra)')
 print(Style.BRIGHT + Fore.LIGHTRED_EX + '[7] Check Your VPN Adress (For TryHackMe or HackTheBox)')
+print(Style.BRIGHT + Fore.LIGHTRED_EX + '[8] Persistance Modules')
 
 time.sleep(1)
 print('\n')
