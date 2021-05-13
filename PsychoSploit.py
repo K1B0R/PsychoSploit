@@ -112,7 +112,7 @@ elif main == '13':
     time.sleep(3)
     os.system('rm -rf ~/PsychoSploit/PsychoSploit.py')
     time.sleep(2)
-    os.system('wget https://raw.githubusercontent.com/MalwareMix/PsychoSploit/main/PsychoSploit.py > ~/PsychoSploit/PsychoSploit.py')
+    os.system('curl https://raw.githubusercontent.com/MalwareMix/PsychoSploit/main/PsychoSploit.py -o ~/PsychoSploit/PsychoSploit.py')
     time.sleep(2)
     print('Done!')
     time.sleep(2)
